@@ -4,11 +4,3 @@
 #屏蔽 所有exe
 *.exe
 
-#屏蔽 所有obj
-*.obj
-
-#屏蔽 所有pdb
-*.pdb
-
-#屏蔽 所有ilk
-*.ilk
