@@ -10,7 +10,7 @@ float get_float(void);
 
 int main(void)
 {
-    int ct;
+    int ct; 
     float i, j;
 
     while ((ct = get_choice()) != 'q')
@@ -24,7 +24,7 @@ int main(void)
             case 'a':
             {
                 printf("%g + %g = %g\n", i, j, i + j);
-                break;
+                break;  
             }
             case 's':
             {
