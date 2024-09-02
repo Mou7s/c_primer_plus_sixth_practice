@@ -1,27 +1,26 @@
+//fibonacci 递归
+
 #include <stdio.h>
 
-double calculateTax(double salary)
+int fibonacci(int n)
 {
-    if (salary < 17850)
+    if (n == 0 || n == 1)
     {
-        return salary * 0.15;
+        return n;
     }
     else
     {
-        return 17850 * 0.15 + (salary - 17850) * 0.28;
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
 
 int main()
 {
-    double salary;
-    printf("Enter your salary: ");
-    if (scanf("%lf", &salary) != 1)
-    {
-        printf("Invalid input. Please enter a valid number.\n");
-        return 1; // 非正常结束
-    }
-    printf("Tax to be paid: %.2lf\n", calculateTax(salary));
-
+    int n;
+    printf("请输入一个整数：");
+    scanf("%d", &n);
+    printf("斐波那契数列的第%d项为%d\n", n, fibonacci(n));
     return 0;
 }
+
+
